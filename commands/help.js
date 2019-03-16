@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     .setTitle("**List of commands & additional Information!**")
     .setColor("#82e509")
     .setThumbnail(bicon)
-    .setFooter(`Commands • Prefix: "."`)
+    .setFooter(`Commands • Prefix: ":"`)
     .addField("**:help**", "List of commands and additional info")
     .addField("**:serverinfo**", "Information on the server")
     .addField("**:suggestion**","Puts a sugggestion that you made. ")
