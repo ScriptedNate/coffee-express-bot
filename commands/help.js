@@ -15,6 +15,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("**:ban**", "Bans someone.")
     .addField("**:poll**", "Starts a poll.")
     .addField("**:tempmute**", "Mutes someone temporarily.")
+    .addField("**!shift**", "Starts a shift");
 
     message.channel.send(botembed);
 }
