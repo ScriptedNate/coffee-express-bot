@@ -20,6 +20,13 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
+//console chatter
+let y = process.openStdin()
+y.addListener("data", res => {
+  let x = res.toString().trim().split(/ +/g)
+  bot.channels.get("553501529785761792").send(x.join(" "));
+});
+
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
   bot.user.setActivity("Coffee` Express || :help", {type: "PLAYING"});
