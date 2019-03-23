@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
   const embed = new Discord.RichEmbed()
     .setColor("RED")
     .setDescription(text)
-    .setFooter(`Announcement by ${message.author.tag}`)
+    .setFooter(`Announcement by Coffee' Express Administration Team`)
     .setTimestamp();
   announceChannel.send(embed);
   message.delete().catch(console.error);
