@@ -24,7 +24,7 @@ fs.readdir("./commands/", (err, files) => {
 let y = process.openStdin()
 y.addListener("data", res => {
   let x = res.toString().trim().split(/ +/g)
-  bot.channels.get("553501529785761792").send(x.join(" "));
+  bot.channels.get("551509634918383637").send(x.join(" "));
 });
 
 bot.on("ready", async () => {
